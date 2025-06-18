@@ -80,9 +80,14 @@ scikit-learn
 ```
 
 ### 3.Run the Main Script
-Ensure both lab_count.csv and lab_metadata.csv are in the root directory.
+By default, the script expects the input files to be named `lab_count.csv` and `lab_metadata.csv` and placed in the root directory. You can run it simply with:
+
 ```bash
 python ML_ICI_Response.py
+```
+Alternatively, you can provide custom file paths via command-line arguments:
+```bash
+python ML_ICI_Response.py --count_file path/to/your_counts.csv --metadata_file path/to/your_metadata.csv
 ```
 ---
 ### Repository Structure
